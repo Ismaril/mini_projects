@@ -1,0 +1,109 @@
+:::/WW??#?x<</#S<:::::::/@@@@W###S??OOO/<::::::::::::::::::<:<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+::<?W#SO?WO<x/?#x:::::::O@@@@@###S???O/xx<:::::::::::::::::::<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<::<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+::/#WWW#W@??#WW#x::::::<S@@@@@#SSS?OO?Oxx<:::::::::::::::::::<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<:::::<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+:<OWW#?SWWWWWWWW/::::::<?@@@@@W#SS?OOO//xx<:::::::::::::::::::<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<::<<<:::::::::::::<:<<<<<<<<<<<<<<<<<<<<<<<<<<
+:xSWW#SS?#WWWWW#O<:::::xW@@@@@@#S#?OOO/xx<:::::::::::::::::::::<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<::::::::::::::::::<<<:<<<<<<<<<<<<<<<<<<<<<<
+:xOOSW#W/xOOO#W?x<:::::xW@@@@@@S?S??OOO//x<::::::::::::::::::::<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<:::::::::::::::::::::::<::<<<<<<<<<<<<<<<<<<<<
+::<OW???<::<O#/x<<:::::/@@@@@@@@WS??OO///x<:::::::::::::::::::::<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<::::::::::::::::::::::::::::<<<<<<<<<<<<<<<<<<<<
+<x</?S?O<::<O?/<::::::xW@@@@@@@@S?SO/O/xx<:::::::::::::::::::::<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<:<:::::::::::::::::::::::::::::::::<<<<<<<<<<<<<<<<<<<
+xOS?SWW@OxOWWWWO<x<::x#@@@@@@@@@W#S?OO/xxx<:::::::::::::::::::::::<<<::<::<<<<<::::::::<<::::<<<::<<<<<<::::::::::::::::::::::::::::::::::::::<<<<<<<<<<<<<<<<<<
+S#WWS??#W#WW@WW#SW/:<?@@@@@@@@@@WSO??O/x<<<:::::::::::::::::::::::<::::::<<<::::::::::::::::<<<:::::::::::::::::::::::::::::::::::::::::::::::::<<<<<<<<<<<<<<<<
+WWWW#S###WW@@WWWWWO:x#@@@@@@@@@@@#O/OO/xx<:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<<<<<<<<<<<
+W##@W#W//?OSWWSS#SS/O@@@@@@@@@@@@WSOOOx<::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<<<<<<<<<<<<
+:/WW?O/<,:xW@W/<</WW@@@@@@@@@@@@@@#?O/x<:::::::::::::::::::::::::::::::::::::::::::::<:<<x:<<x:</<<<<::<::::::::::::::::::::::::::::::::::::::::::::::<<::<<<<<<
+<OWW##?<:<x?W#Ox/SWW@@@@@@@@@@@@@@WSOx<<::::::::::::::::::::::::::::::::::::::::::::<<xWWW@WW@WW@@@@@@@WWWx::::::::::::::::::::::::::::::::::::::::::::::<<<<<<<
+x/?###WOOWWWW@O/xO#@@@@@@@@@@@@@@@@SO/<:::,,:,:::::::::::::::::::::::::::::::::<<xSWW@@WW@@@@@@@@@@@@@@W@@@@@@W#/::::::::::::::::::::::::::::::::::::::::::<<<<<
+WWW?O#WWWW@@@W##WWWW@@@@@@@@@@@@@@@S/xx<:,,,,:::::::::::::::::::::::::::::::::#WSW@@#@@W@W#@@@WW@@@@@@@W@@@@@@@W@@WSx::::::::::::::::::::::::::::::::::::::::<<<
+WWW#WWWWW@@W@WWWWWWW@@@@@@@@@@@@@@@#/<<::,,,,:::::::::::::::::::::::::::::<?#SSWW@WWWW@#@W@W@W@@@@W@@#W@@@@@@@@@@W@WWW<:::::::::::::::::::::::::::::::::::::::<:
+S#W????/O#@@?OSWWW##@@@@@@@@@@@@@@@WO<:,,,,,,,,:::::::::::::::::::::::::<?S#W#WW@?#@W@WSW@W@@W@##@@@@W@@@@@@WW@@@@@W@@@W::::::::::::::::::::::::::::::::::::::::
+<S#??/<<?@@W/::<?WSOS@@@@@@@@@@@@@@@O:::,,,,,,,:::::::::::::::::::::::<#?W#S@@W@@SWSWW##WW#WW@#WW@@W@W@@@W@@@@@@@W@@@@@W@@?<::::::::::::::::::::::::::::::::::::
+<?WW#Ox</WSx,,:<//<<O@@@@@@@@@@@@@@@#<:,,,,,,,,,:::::::::::::::::::::SSWWWWWW@W#S#WWW#@#W@W@W#WW@@WW@@#@@@W@W@@W@@#@W@@@W@W@S,::::::::::::::::::::::::::::::::::
+O?#?S??S?#@W<:xOSSx:/W@@@@@@@@@@@@@@Wx:,,,,,,,,,:::::::::::::::::::W####WW####W#W#WWSWSSW#WSW#W#WW@@SWWW@WWW@@W@@@WW@#@@@SWW@W::::::::::::::::::::::::::::::::::
+WWSSWWWWWW@W??WWWW?xO@@@@@@@@@@@@@@@@/:,,,,,,,,,,,::::::::::::::::#WWWW##WWS?#??O?#O//S?OOO????#WWW#S##S##W@WWWWWW@@WWWWWW#S@W@x::::::::::::::::::::::::::::::::
+WWWW@@WWWW@@WWWWWW##W@@@@@@@@@@@@@@@@S<:,,,,,,,,:::::::::::::::::?W@W#WS#S?xx/xxx/x//x/xxxx//O?OO??O???????SSSSSSS##WWWWWWW@@@WWO:::::::::::::::::::::::::::::::
+#W??OOSWW#SWWWWW#?SWWW@@@@@@@@@@@@@@@S<:,,,,,,,,::,::::::::::::<xW#W?SSSOO/xx/x<<xx/x/x////x/OOO//OO?OOO?OO?SSSSSSSS###WW#W@W@W@@O::::::::::::::::::::::::::::::
+?#SS??WWW?/OOOSW#<:<</W@@@@@@@@@@@@@@#<,,,,,,,,,,::::::::::::::<WWWWS?SO/xxxxxxxxxxxxxxxxx<x//////O//??/OO???SSSSSSSSS###W@WWWWW@@<:::::::::::::::::::::::::::::
+#W#SO?WS/xxxO#WWS<,,<?W@@@@@@@@@@@@@@Wx,,,,,,,,,,:::::::::::::<#W#S@#?OOxxxx<xxx<<x<xxxx<<<xx/xxx//OOO/OOO?????SSSSSSSS###@W##WW@@S:::::::::::::::::::::::::::::
+O???###WW?/OOOSWW/:::x#@@@@@@@@@@@@@@@/:,,,,,,,,,,,:::::::::::</#@??#SO/xxxx<<<<<:::<<xx<x<x<xxxx////OOOO/OO???SSSS?SSSS#W@WS##W@@@<,:::::::::::::::::::::::::::
+W##WWWWWW##@WWWWWOOWWS#@@@@@@@@@@@@@@@O:,,,,,,,,,,,::::::::::<####??SOOOxxxx<<x<:::<:<<<<<<x<<x<xx///x////OOOO??SSSSSSSS########W@@x,:,:::::::::::::::::::::::::
+WW#WWWW##@@@WWWWWWWWWWW@@@@@@@@@@@W@@@?:,,,,,,,,,,,:::::::::,<WW#S/OO?x//x<<xx<<:<:<:<<:<<xx<<<xxx//OO/O//OOOO??SS?SSSS##W#W@##WSW@S:,,,::::::::::::::::::::::::
+W??#WWWOx?WWWWWW#WWWWWW@@@@@@@@@@@@@@@S<,,,,,,,,,,,,:::::::::/W##S/??xO///x<<<<<:<<:<<x<<<xx<<<<xx//O/O/OO/OO???SSSSSS#SS###@#SW#W@W,,,,,,,,,,::::::::::::::::::
+W#SS#SOx<x?#WWWS?/OSWWW@@@@@@@@@@@@@@@W<,,,,,,,,,,,,::::::::://#S??S//x//xx<<<x<<<::<<:<<</<x<<<x<x///O//OO?O?O??SSSSSSS?SSW#####WW?:,,,,,,,,,,,::::::::::::::::
+W?OS#Ox<:</WWSO/<<OWW#?#@@@@@@@@@@@@@@@/:,,,,,,,,,,,,::::::::O#W????x/xxxxxx<:xx<::<<:<::<xxxxxx<x/xx/xO//OO?????SSSSSSSSSSSWS?S####,,,,,,,,,,,,::::::::::::::::
+???SWWWx<OSWWW#O<:xSWSOS@@@@@@@@@@@@@@@/:,,,,,,,,,,,,,:::::::,#W???/xxx<xxx<<<<<x::::<:<:x<x:x<<<x<<x//////OOO????SS?SS#SSSSS###W#Wx:,,,,,,,,,,,,,,,:,,:::::::::
+WW@WWWWSSW@@WWWOOWS#WW##@@@@@@@@@@@@@@@O:,,,,,,,,,,,,,:::::::<#W?/xxxxxxxxx<<:::<::::<:<<<<<<</xxx<xxx/OOOO??OO?OO??SS#SSSS??SWW?##:,,,,,,,,,,,,,,,,,,:,::::::::
+SSWWW#WWWW@@WWWWWWWWWW##@@@@@@@@@@@@@@@S<,,,,,,,,,,,,,:,::::::WWSxxxxxxxxx<::<::::x:xx<x<x<x<xxxx<<///OSS?S###W#WWW#S#SS#SSSS?#WWWW:,,,,,,,,,,,,,,,,,,,,::::::::
+SSWW/xOW#SW@WOOWWWWWW##WW@@@@@@@@@@@@@@#<,,,,,,,,,,,::::::::::,W#xxxxxx/xx<O#WW#WW@@S?S##/OO<<xx/O/O?SS#W#W@WWW@W@@WWW@#SSSSSSSW?S#,@#S,,,,,,,,,,,,,,,,,,:::::::
+WWWS<,,,:OW@W<::</#WWx<S#@@@@@@@@@@@@@@Wx,,,,,,,,,,,,:,:,,///???@/xxxx/xSWW?#SS#W#?#@##?S?O/x<<x/O?S#S?O????SOO??S#?#WWWSSSSSS?@W##SS?W#,,,,,,,,,,,,,,,,,,,:::::
+?OO<,,,:xSW?:,,,:?W#O<,,<W@@@@@@@@@@@@@@/:,,,,,,,,,,,,:::OS/<//xS/xxx<O?#/S/xx//?#@###W?OO<<<::</OSS#SS#S#@/?@@W@W#########SSSSWS???OOSW?,,,,,,,,,,,,,,,,,,,:,::
+SWWWx:x/x/#@S<:<</Ox<:,.:#@@@@@@/OW@@SO?O:,,,,,,,,,,,,,,:x?x<:<<<Oxx<<xx<x/SOWxOWW@@@S?#?Sx<<:<</OS##W#@S#S:WWW@S?W#@WW#SSSSSS?#?SOOO/SWS,,,,,,,,,,,,,,,,,,,,:::
+#WWWS?WWWWW@#??WWWWW#<:xx?##WW?<,,<O<,,:x:,,,,,,,,,,,,,,:x?x<,,,<#/xxxxxO//?O/OOO?O?OSSO/x/x<<<x/S?####S??O/O???OO?S##S#SSSSSSS/S??O?<?W#,,,,,,,,,,,,,,,,,,,,,::
+SW##WWWWWWWWWWWWWWWW#??W#W##W@W<::/W<,,:O<,,,,,,,,,,,,,,,:/,<,::<O//<xxxxxxxxx::<<xO?S//Ox<<<<x<OSSSS#SS?OSSSSSSSSSSSSSSS?SSSSS/WW#S??SW<,,,,,,,,,,,,,,,,,,,,,,,
+#W/x?O/?WWSS#@WWWWW##WWW#W@@@@WS@SSWSSOO#<,,,,,,,,,,,,,,::<O:<x/O?/xxx<<<<x<x<x<<:xx/xx<<x<<<<xx/?SSSS???S???S??OOO??OSSS?SSSSSO###SS?W?,,,,,,,,,,,,,,,,,,,,,,,,
+SO<,,,xW##?//O?#WWW/xOxx?W@@@@@@@@@W@@@WWx,,,,,,,,,,,,,,:::<:xx/O//xxx<<:<x<<:<<::<<:::<:<<<<x<//OSSSSS??O?????OO/OOO??S?SSSSSSO/WW##?S,,,,,,,,,,,,,,,,,,,,,,,,,
+S?<,,,x#W/:<x/WWW#?<:,,OW#W@@@@@@@@@@@@WW/:,,,,,,,,,,,:,::::xx/OOxx/xx<<:::::<:::::::::<<<<xx<xx/?SSSSSS????O??OO///O??SSSSSSS??#W##S??,,,,,,,,,,,,,,,,,,,,,,,,,
+WW//##?S##SOOOS#WWWO:,,x##W@@@@@@@@@@@@WW?:,,,,,,,,,,,,,::::x:x/Ox///<<<::<<xx<:<<<::<<:<<<<xxx/OOSSS##SS?S??O?O??/OO??SSSSSSSS?#S#S#S,,,,,,,,,,,,,,,,,,,,,,,,,,
+#W#WWWWWW##S#@@WWWWO/#SOS#W@@@@@@@@@@@@WW#<,,,,,,,,,,,,,,::::xx//O</xx<<:<:<<x<x<<xxx<x<xxxx<xx//O?SS#####??OO?SO?OO?S??SSSSSSS???O#S,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#WWWWWWW###W@@@WWWWWWWWWW#W@@@@WWW#W@@WWWWx,,,,,,,,,,,,,,:::::xx<<</xxx<<<<<<:xx<<::x/xxx<<<<</xxOO?SS?SS#W#??O?O?????SSSSSSSS??//O.,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+S?OOSWWW#<<SW@@WWWWWWWWW###@@@W#WW##@###SS/:,,,,,,,,,,,,,::::,:<<<:x/x<<<<<<:<:/x<</Ox<::<xx<x//O?S#S???SS##SO?O??/SOS?SSSSSSSSS?O?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+/<:/WW#S/,.:S@WWWWWWWWW#x,<WW@W#WS#@@##WS?O:,,,,,,,,,,,,,:::::::<<<O//xxx<<:x<<<xx//:xxSW#W@x//O?S#W#S??#SS?S?xOOO?OSSSSSSS#SS:./.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+x<<OWWS/:..:#@WWWWWWW#x,,.:?##WWWWW@#?x:</x:,,,,,,,,,,,,,:::::::::::<xxxx<xx/:<:/O?<:<<xO/<:/O/????SSSS?S??????/O?SSSSSSSSS#SS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+O/??#WW#S::?#WWWWWWWO:,,,.,/SS#W#W@S?x:,....,,,,,,,,,,,,,,:::::::::::xxxxxx<xxx///:<::<<<<:x/OO/x/O????S?O?????#O??SS?SSS#SSS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#WWWWWW##?SW@@WWWWWWS<,,..,x??##W@WS#?x<,....,,,,,,,,,,,::::::::::::::xxxxxxxx/?x<<x<<<xxxxx/O?/xxO????SSS?SSSS?S??S?SS?SS#S ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#WWWWW####WW@@WWW####?:,,.,<OOS#W@#S#####Sx:,,,,,,,,,,,,::::::::::::::xxxxxxxxOx</x/xx/<x<x/O???/OO?SSSSS#SS###SSWOO?S?SS#S.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+xO#WWWW###WW@@W#######?:,..://?W@W#SS####S##x:,,,,,,,,,,::::::::::::::,xx<xxxxSx/?/</xx/OSS?O??SS########WWW#W#SS#OO?SSS#SW,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+xSWWWWW#W##W#WW########?:.,://?@WW#SxxO#S#WSO<,,,,,,,,,,:::::::::::::::,/xxxx<?<OSWS##S??S#WWS?S#WWW#WWWWWW####SSW/OS##S#@,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+<?WWWW####O//?##########O:,:x/?WW##?xx?S::/S?<,,,,,,,,,,:::::::::::::::::/xxx<x/////x//??OOxx/O/O??SS###SS#SSSSS#?OS##S#S,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+##WWWW##?<:xx<x##########/:<xx?#?O?#SSS#/x#Ox<:,,,,,,,:,:::::::::::::::::,x/xOxOxx<<xxxxxxxO<//OO???S#SSSSSS?#S#SSW####?O,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WWWWWWS<,,:x<:,<S#########Oxx/x<<:,,,:<?SSSx:<:,,,,,,::::::::::::::::::::://////x//x<<xx<x</OOOO??????S?S?SSSS########???,.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WWW#/:,,,,:x<,,:x?########S/xx<<O/::<<,,,<SS?x:,,,,,::::::::::::::::::::::,x<//x/x/xxx<x<x<xxxxOOO?O?S?S?SSSSS######S???O:/@,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WW##/:,,,,:x:,,<::O########/x<:<x<::xx:,,.,/?O<,,,,:,::::::::::::::::::::::xxxO/xxxxxx/xxx/x///OO??????????SS#####SSSS??<::@W.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#####O:,,,<<,,:<:,:O#######OOO<</x:,:<<:::.,xSx:,,,,:::::::::::::::::::::::,x<xxO//xxxxx/<x/</O//OO??????SSS#S###SSS?SSx,,:@WW.,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+######O:,,::,,:<:,,:?######S?S/<xW#?:,:</O:.,Ox:,,,:::::::::::::::::::::::/,/xxxx////xxxxxxx////x/OOO????SS#######SSS?<:::,@@WW@,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#######/:,::,,:<:,,,<S#####x:<x<x?SSSx,,<<<:,</:,,,,::::::::::::::::::::#W#.xxxxxxxO///<x<//xO///OOO???SSS#######SS#<:::::?@WWWWW?,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+########/,,::,:<:,,,,x#####S??S#S??SS?x,,<x<,,::,,,,:::::::::::::::@WWWWWW,..?/xxx<xxO/x//xxxO/?O????SS######SSSSSx<:::::<@@WWWWWWW.,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#########/:,,:<<:,,,,:/####OxxOS?O/O<xS:,,<x:,.,,,,,::::::::::WWWWWWWWWWWW...:/<x<<xxx<?/OOOO???S???#S###S#SS##/<:<:::::<@@WWWWWWWWWW/,,,,,,,,,,,,,,,,,,,,,,,,,,
+##########/:,:<<:,,,,,<S###/<</O//O<,.,/:.:x/:,,,,,:::::,WWWWWWWWWWWWWWW#W,...:/x<<x<x<<xx/OOSSSSSSSSSSSSS#SO<<:::::::<<@@@WWWWWWW@@@@@@W#.,,,,,,,,,,,,,,,,,,,,,
+###########/<<<<:,,,,::x###S??S#S/x:,,.:x,,:::,,,::,xWWWWWWWWWWWWWWWWWWWW@,....:S:<xxx<<x<xx/O#S?????SSS?<::::::::::<<<@@@@WWWWWWW@@@@@@@@@WWO,,,,,,,,,,,,,,,,,,
+O###########?x<::,,,,:,,x##:,,:::::.. .:S<,,:xxOWWWWWWWWWWWWWWWWWWWWWWWWW?.......Sx<xxxx<xx/O?OOOOOO?SO::::::::::::<<xW@@@@WWWWWW@@@@@@@@@@@@@@WWO,,,,,,,,,,,,,,
+<?###########?x<:,,,::,.,xS:...,,:,.. .,#WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW,,.... ..:W/xxxx//x//OO/OOS.,,,,,,,,:::::<</@@@@@@WWWWW@@@@@@@@@@@@@@@@@@WW@,,,,,,,,,,:
+,<S###########?x<:,,::,,,:/<,..,:,:WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW.......  ..##xxxx//OOOO?..,,,..,,,,,::::<<?@@@@W@@WWW@@@@@@@@@@@@@@@@@@@@@@@@WWW.,,,,,:
+,,<?##########WO<:,,::,,,.:<:,/WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW,..... .. ...@S/////O..........,,,,::::<<?SW@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:,:
+,,,<?#########W#x:,::,,,,.#WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@.......... ...,:@W......,,.,,,,,,,::::<<?SW@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<
+,,,,:/########WW#x:::,xWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@/.......... @@<x@@#W,,,.,.,,,,,,,::::::<O/WWWW@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+,,,,,:/#######WW#Sx:W@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW.....  ..@O/?W.O,O<WWW ,,.,,,,,,,:::::<//WWWWW@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+,,,,.,,x#####WWW##SWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@...... WWS//OS##@ O<x@W# ,::,::::,::::x/WW@W@W@@@W@@@@@@@@@@@@@@@@@@@@@@WWW@@@@@@@@@@@@@
+,,,,,,.:/####WWW##W@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWS.... S?x:<OO/?##WWWOO/#@#W.,:::::,:::<x@WWWWWWWW@@W@@@@@@@@@@@@@@@@@@@@@@@W@W@@@@@@@@@@@
+,,,,..,,:/###WWW#WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW:...OS/x:, O/O?S##WWWW##?/#WW:,,:::::<xOWWWWWWWWWW@W@@@@@@@@@@@@@@@@@@@@WWW@WW@@@@@@@@@@@
+,,,,,,,,,,x##WWWWWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@..:Ox:,,,,:OOO?####WW###x?W@?//,:,::<x<WWWWWW@WWWWWWWWWW@W@@@@@@@@@@@@@@@WW@W@@W@@@@@@@@@
+,,,,,,,,,,,x#WW#WWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@S:.,:,,,.,,,/OOS###W####SS@#?x<::,::,<xWWWWW@WW@@W@WWWWW@W@@@@@@W@WW@@@@@WW@WWWWW@@W@@@@@@
+:,,,,,,,,,,,xWW#WWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@Wx.,,,,,,,:SOO?S#####W##@W?x::,,,,,.:xWWWWWWWWWWWWWWWWWW@W@W@@WW@@@@@W@@@@WW@WWWW@W@@@@@@@
+:::,,,,,,,,.:?WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW#WWWWWWWWWWWWWWW@@#..,,,,.,,.?:xSS#W####W@W?x:,,,,,,,,<#WWWWWWW@WWWW@WWWWWWWWW@W@@@WWWW@@WWWWW@@W@@W@W@@@@@@
+x::,,,,,,,,.,/WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@W#...,,...,SO x,<OSWWWWWWS/:,,,,,..,<OWWWWWWWW@WWWWWWWWWWWWW@W@@@@WWWWWWWW@W@W@W@WW@W@@WW@@
+#x:,,,,,,,,.,/WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@W<..,,.... #O#W@@W.S##WW#O<::,,,,.,<OWWWWWW@WWWWWWWWWWWWWWW@WWWWW@WWWW@W@@WWWW@@WWWWWWW@WW@
+##x:,,,,,,,.:WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@W....,....#OSW@@@/,SW#WWWx:,,,,,.,:OWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@@@@@WWWWWW@WWWWWWW@W@W@W
+###x:,,,,,,,:WWWWWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@WW.......W#OSW@@@O: W##SW#<,,,,,.,,/#WWWWW@WWWWWWWWWWWW@WWWWWWWWWWWW@@@WWWWWWWWWWWWWWWWWWWWW
+####x::,,,,,,WWWWWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@WS......##O?W@W@S# O####WS:,,..,,,x?WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@WWWWWWWWWWWWWWWWWWWW
+#####/<::,,,SWWWWWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWSWWWW@Wx.... ##O?#WW@#O SOS###S#:,....,:?WWWWWWWWWWWWWWWWWWW@WWWWWWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWW
+######/:::,,WWWWWWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@#,... ##OO#WW@#/xSSOS#W##S<,,...,OWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@@WWWWWWWWWWWWWWWWWWWWW
+#######O<::WWWWWWWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@#... W#?OSWW@:O  W??SW##WSO<,..,xSWW@WWWWWWWWWWWWWWWW@WWWWWSWWWWWWW@@WWWWWWWWWWWWWWWWWW@WWWW
+########O:,WWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@W?...##?/?#@?S/:W##O?######?O:..:?WWWWWWWW@Sx:: x?SWWWWWWWWWWWWWWWW@@W@WWWWWWWWWWWWWWWWWWWWWW
+#########O#WWWWWWWWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@W<..@#S/O O:O OS#WSO?S#W###SS:.,/WWWWWWWWWW OW/  OWWWWWWWWWWWWWWW@@@WWWWWWWWWWWWWWWWWWW@WWWWW
+######WW##WWWWWWWWWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@W,.,#S? x,SO#?S#W#OOSS####O#S..:WWWWWWWWWWWWWW@@#SWWWWWWWWWWWWWW@@@@WWWWWWWWWWWWWWWWWWWW@WWWW
+######W###WWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@#..SS x/,##SO?#W#?/?S###x//WO.,/WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@@@WWWW@WWWWWWWWWWWWWWWWWWWWW
+#####WW##WWWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@x.@ /x ?SSS??S##SOO?S##S:O?W,.:WWWWWWWWW@WWWWWWWWWWWWWWWWWWWWW@@@@WWWWWWWWWWWWWWWWWWWWWWWWWWW
+O####WW##WWWWWWWWWWWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@, /, OO???OO?##SO/OSS /?.#WW,,WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@@@WWW@WWWWWWWWWWWWWWWWWWWWW@WW
+:/##WW###WWWWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@W,.:O?/O?OOO?SSS?/OO O,?#SSWW,WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@@WWWWWWWWW@WWWWWWWWWWWWWWW@WW@@
+,:x#WW##WWWWWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@W:#?OO/OO?OO?S??OO:/.O:SS?SWS WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@@W@WW@WWW@WWWW@WWWWWWWW@WWW@W@@@
+,,:/#W##WWWWWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@W??OOOOOOOO?S?OO?<</ SSSS??WxWWWWWWWWW@WWWWWWWWWWWWWWWWWWWW@@WW@WW@WWW@WWWWWWWWWWWWWWWWW@@@@@@
+,:::xS#WWWWWWWWWWWWWWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@WO?OOOOOOOO??OO,<x ?SSSSS??@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWW@@@@@@@@
+,,,:<xSWWWWWWWWWWWWWWW@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@W??OOO/OOOO??,<:.O??SSSS???@WWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@WWWWWWWWW@WW@WWWWWWWWWWWWWWWW@@@@@@
+,,,<<:<WWWWWWWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@#OOOO?/OO?O.:<,??O??SS????SWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@@W@WWWWWWW@@@WWWWWWWWWWWWW@W@@@@@@@@
+,,:<<:xWWWWWWWWWWWWWWW@@WWWWWWW#WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@#??OOOOOO <:,?OOOOOSSSS???WWWWWWWWWWWWWWWWWWWWWWWWWWWW@@@WWWWWWWWWWWW@@WWW@WWWWWWWWWW@@@@@@@@@
+,,:<<:SWWWWWWWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@#?OOO?O.<<.OO?OOO?OSS???O@WWWW@WWWWWWWWWWWWWWWWWWWWWW@@@WWWWWWWWWWWWW@@WWWWWWWWWWWWWW@@@@@@@@@
+,:<<::WWWWWWWWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@W?OOO /<:?OOO?OOOOO????OOWWWWWWWWWWWWWWWWWWWWWWWWWWW@@@W@WWWWWWWW@@WWWW@@W@WWWWWWWW@@@@@@@@@@W
+,:<<::WWWWWWWWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@W?O x,<SOOOOO???O??SS???WWWWWWWWWWWWWWWWWWWWWWWWWWW@@@@WWWWWWWWWWW@WWW@@@@WWWWWWWW@@@@@@@@@@WW
+:<<::OWWWWWWWWWWWWWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@W,x /S?OOO?OOOOOOO????O@WWWWWW@WWWWWWWWWWWWWWWWWWW@@@WWWWWWWWWWWW@@@@@@WW@@WWWWWW@@@@@@@@@@@WW
+<<:::WWWWWWWWWWW@WWWWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@#.x/OO?OOOOO?OOOO??SO :WWWWWWWWWWWWWWWWWWWWWWWWWW@@@W@WWW@WWWWWWWWWW@W@@@W@WW@@@@@@@@@@@@@@@W@
+<<::<WWWWWWWWWWWW@@WWW@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@S<OOO?OOOOOOOOOOOO? x WWWWWWWWWWWWWWWWWWWWWWWWWW@@@WWWWWWWWWWW@@W@@@@@@@W@@@@@W@@@@@@@@@@@WWWW
+/<<:WWWWWWWWWWWWWWWWW@@@WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW@@@W?OOOOOOO?OOOOOOO :./@WWWWWWWW@WWWWWWWWWWWWWWWW@W@WW@@@@@@W@@@@@@@@@@@@@@@W@@@@@@@@@@@@@@@WWWW
