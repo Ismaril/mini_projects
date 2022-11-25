@@ -1,4 +1,4 @@
-﻿### Personal repository to just have some fun with small projects.
+## Personal repository to just have some fun with small projects.
 
 Example of pixel art result:
 ![eagle](https://raw.githubusercontent.com/Ismaril/mini_projects/main/pixelart/finished%20images/eagle.png)
