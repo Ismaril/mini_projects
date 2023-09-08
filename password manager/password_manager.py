@@ -1,181 +1,366 @@
 import sys
-
+import random
+import hashlib
+import cryptography
 from cryptography.fernet import Fernet
 
-KEY = b'wv0Qaap6H4yAZ6A8ohjxI1FtIIOV9FO7fJDQ_sUzpIU='
+DATABASE = "encrypted.txt"
+SETTINGS = "settings.txt"
+CRYPTOGRAPHER: Fernet | None = None
 
 
-# TODO: FERNET key should not be within codebase
-# TODO: password should not be possible to return back as plain string, when you want to check passwords, compare hashes = passwords should never be visible
+class Constants:
+    """
+    This class contains constants used in the program. These constants could not be otherwise used
+        in "match cases" syntax.
+    """
+
+    WRITE_MODE = "w"
+    READ_MODE = "r"
+    DELETE_MODE = "d"
+    SHOW_ENCRYPTION = "e"
+    GENERATE_PASSWORDS = "g"
+    QUIT = "q"
 
 
-class PasswordManager:
+def convert_to_hash(raw_text: str):
+    """
+    This function serves as encryption of inputted text.
 
-    def __init__(self):
-        self.f = Fernet(KEY)
+    param: raw_text: String to be encrypted.
 
-    def encrypt(self, x):
-        """This function serves as encryption of inputted text"""
-        return self.f.encrypt(bytes(x.encode())).decode()
+    :returns: string
+    """
+    # Create a hash object (e.g., SHA-256)
+    hash_obj_ = hashlib.sha256()
 
-    def decrypt_master_password(self, x):
-        with open("encrypted.txt", "r") as f_read:
+    # Update the hash object with the data
+    hash_obj_.update(raw_text.encode())  # You need to encode the data to bytes
+
+    # Get the hexadecimal representation of the hash
+    hash_string_ = hash_obj_.hexdigest()
+
+    return hash_string_
+
+
+def generate_fernet_key():
+    """
+    Generate key for Fernet.
+
+    :returns: None
+    """
+
+    print("This is your Fernet Key, save it somewhere safe.")
+    key = str(Fernet.generate_key())
+    print(key[2:-1], end="\n\n")
+    operations_separator()
+
+
+def encrypt(raw_text: str):
+    """
+    This function serves as encryption of inputted text.
+
+    :param raw_text: String to be encrypted by Fernet.
+
+    :returns: str
+    """
+
+    result = CRYPTOGRAPHER.encrypt(bytes(raw_text.encode())).decode()
+    return result
+
+
+def take_master_password():
+    """
+    Take input from user, compare it later with 'True master password'.
+
+    :returns: str
+    """
+
+    result = input("Enter your master password: ").strip()
+    hash_result = convert_to_hash(result)
+    return hash_result
+
+
+def decrypt_master_password_from_database():
+    """
+    This function decrypts master password and returns hash.
+
+    :returns: str
+    """
+    try:
+        with open(DATABASE, Constants.READ_MODE) as f_read:
             read = f_read.readline().encode()
-        return self.f.decrypt(bytes(read)).decode()
+        return CRYPTOGRAPHER.decrypt(bytes(read)).decode()
+    except cryptography.fernet.InvalidToken:
+        print("You entered wrong key, exiting application.")
+        input("Press any key to exit...")
+        sys.exit()
 
-    def decrypt_whole_text(self):
-        with open("encrypted.txt", "r") as f_read:
-            read = f_read.readlines()
-            decrypted = []
-            for encryption in read:
-                encoded = encryption.encode()
-                decoded = self.f.decrypt(bytes(encoded)).decode()
-                decrypted.append(str(decoded))
-        return "\n".join(decrypted)
 
-    @staticmethod
-    def check_master_password():
-        """Take input from user, compare it later with 'True master password' """
-        return input("Enter your master password: ").strip()
+def decrypt_whole_text():
+    """
+    Decrypt whole database text.
 
-    @staticmethod
-    def incorrect_password(password_true, password_actual, nr_of_attempts):
-        """Display message based on number of incorrect password attempts"""
-        if password_true != password_actual:
-            print(f"Incorrect master password, you got {2 - nr_of_attempts}/3 attempts left")
-            return 1
+    :returns: str
+    """
+    with open(DATABASE, Constants.READ_MODE) as f_read:
+        read = f_read.readlines()
+        decrypted = []
+        for encryption in read:
+            encoded = encryption.encode()
+            decoded = CRYPTOGRAPHER.decrypt(bytes(encoded)).decode()
+            decrypted.append(str(decoded))
+    return "\n".join(decrypted)
 
-    @staticmethod
-    def out_of_password_attempts(nr_of_attempts):
-        """Give a user 3 attempts to get inside"""
-        if nr_of_attempts == 3:
-            print("You entered incorrect password 3x\n"
-                  "***Quitting***")
-            sys.exit()
 
-    def set_master_password(self):
-        """Set new master password if opening the file for the first time"""
-        with open("encrypted.txt", "r") as f_read:
-            read_line = f_read.readline()
-        if not read_line:
-            master_password = input("Create your new master password: ").strip()
-            with open("encrypted.txt", "w") as f_write:
-                f_write.write(self.encrypt(master_password))
-                print("Your new master password was set\n")
+def out_of_password_attempts(nr_of_attempts, limit_of_attempts):
+    """
+    Give a user 3 attempts to get inside.
 
-    @staticmethod
-    def text_formatting():
-        """Format in [Page: XXX, Login: YYY, Password: ZZZ]"""
-        result = str()
-        result += f"[Page: {input('Enter a name of page/program: ')}, "
-        result += f"Login: {input('Enter a login: ')}, "
-        result += f"Password: {input('Enter a password: ')}]"
-        return result
+    :returns: None
+    """
+    if nr_of_attempts == limit_of_attempts:
+        print("You entered incorrect password 3x\n"
+              "***Quitting***")
+        input("Press any key to exit...")
+        sys.exit()
 
-    def read_passwords(self):
-        """Read all passwords"""
+
+def does_master_password_exist():
+    """
+    Check if master password exists in the database.
+
+    :returns: bool
+    """
+    with open(DATABASE, Constants.READ_MODE) as f_read:
+        read_line = f_read.readline()
+    if read_line:
+        return True
+    return False
+
+
+def set_master_password():
+    """
+    Set new master password if opening the file for the first time.
+
+    :returns: str
+    """
+
+    print("Create your new master password.")
+    with open(DATABASE, Constants.WRITE_MODE) as f_write:
+        master_password = encrypt(take_master_password())
+        f_write.write(master_password)
+        print("Your new master password was set.\n")
+        return master_password
+
+
+def text_formatting():
+    """
+    Format string in [Page: XXX, Login: YYY, Password: ZZZ]
+
+    :returns: str
+    """
+    result = str()
+    result += f"[Page: {input('Enter a name of page/program: ')}, "
+    result += f"Login: {input('Enter a login: ')}, "
+    result += f"Password: {input('Enter a password: ')}]"
+    return result
+
+
+def operate_passwords(mode: str, master_password_user: str | None = None):
+    """
+    Read all passwords from database.
+
+    :param mode: Mode of operation
+    :param master_password_user: Master password entered by user
+
+    :returns: None
+    """
+
+    if mode == Constants.READ_MODE:
         print("***Read passwords***")
-        nr_of_attempts = 0
-        while nr_of_attempts < 3:
-            master_password = self.check_master_password()
-            with open("encrypted.txt", "r") as f_read:
-                f_read.read()
-
-            if master_password == self.decrypt_master_password(master_password):
-                print(self.decrypt_whole_text())
-                break
-            nr_of_attempts += self.incorrect_password(self.decrypt_master_password,
-                                                      master_password,
-                                                      nr_of_attempts)
-        self.out_of_password_attempts(nr_of_attempts=nr_of_attempts)
-
-    def write_password(self):
-        """Write new entries"""
+        print(decrypt_whole_text())
+        return
+    elif mode == Constants.WRITE_MODE:
         print("***Write passwords***")
-        nr_of_attempts = 0
-        while nr_of_attempts < 3:
-            master_password = self.check_master_password()
-            if master_password == self.decrypt_master_password(master_password):
-                new_data = self.text_formatting()
-                with open("encrypted.txt", "a") as f_append:
-                    f_append.write(f"\n{self.encrypt(new_data)}")
-                print("New data successfully added to the database\n")
-                break
-
-            nr_of_attempts += self.incorrect_password(self.decrypt_master_password,
-                                                      master_password,
-                                                      nr_of_attempts)
-        self.out_of_password_attempts(nr_of_attempts=nr_of_attempts)
-
-    def delete_password(self):
-        """Delete entries based on specified keyword"""
+        new_data = text_formatting()
+        with open(DATABASE, "a") as f_append:
+            f_append.write(f"\n{encrypt(new_data)}")
+        print("New data successfully added to the database\n")
+        return
+    elif mode == Constants.DELETE_MODE:
         print("***Delete passwords***")
-        nr_of_attempts = 0
+        list_of_entries = decrypt_whole_text().split("\n")
+        print(decrypt_whole_text())
+        entry_tobe_deleted = input(
+            "Write a name of website/program and delete whole row with it: ")
 
-        while nr_of_attempts < 3:
-            master_password = self.check_master_password()
-
-            if master_password == self.decrypt_master_password(master_password):
-                list_of_entries = self.decrypt_whole_text().split("\n")
-                print(self.decrypt_whole_text())
-                entry_tobe_deleted = input("Write a name of website/program and delete whole row with it: ")
-
-                with open("encrypted.txt", "w") as f_delete:
-                    for i, item in enumerate(list_of_entries):
-                        if entry_tobe_deleted in item:
-                            print("Found at index:", i)
-                            break
+        with open(DATABASE, Constants.WRITE_MODE) as f_delete:
+            for i, item in enumerate(list_of_entries):
+                if entry_tobe_deleted in item:
+                    print("Found at index:", i)
                     del list_of_entries[i]
-                    del list_of_entries[0]
-                    to_string = "\n".join(list_of_entries)
-                    f_delete.write(f"{self.encrypt(master_password)}'\n'{self.encrypt(to_string)}")
-                print("Data successfully deleted\n")
-                break
+                    break
+            passwords = "\n".join(list_of_entries[1:])
+            f_delete.write(f"{encrypt(master_password_user)}'\n'{encrypt(passwords)}")
+            print("Data successfully deleted\n")
+        return
 
-            nr_of_attempts += self.incorrect_password(self.decrypt_master_password,
-                                                      master_password,
-                                                      nr_of_attempts)
-        self.out_of_password_attempts(nr_of_attempts=nr_of_attempts)
 
-    @staticmethod
-    def show_encryption():
-        """Read data in encrypted form from source text file"""
-        print("***Displaying encryption***")
-        with open("encrypted.txt", "r") as f_read:
-            print(f_read.read())
+def show_encryption():
+    """
+    Read data in encrypted form from source text file.
 
-    @staticmethod
-    def home_screen():
-        """Display options that allow you to operate with program"""
-        return input("[Passwords] "
-                     "Read (r), "
-                     "Write (w), "
-                     "Delete (d), "
-                     "Encr (e), "
-                     "Quit (q): "
-                     ).lower()
+    :returns: None
+    """
+    print("***Displaying encryption***")
+    with open(DATABASE, Constants.READ_MODE) as f_read:
+        print(f_read.read())
 
-    def main(self):
-        while True:
-            print("-" * 60)
-            home = self.home_screen()
-            self.set_master_password()
 
-            if home == "r":
-                self.read_passwords()
-            elif home == "w":
-                self.write_password()
-            elif home == "d":
-                self.delete_password()
-            elif home == "e":
-                self.show_encryption()
-            elif home == "q":
+def home_screen():
+    """Display options that allow you to operate with program"""
+    return input("[Passwords] "
+                 "Read (r), "
+                 "Write (w), "
+                 "Delete (d), "
+                 "Encryption (e), "
+                 "Generate (g), "
+                 "Quit (q): "
+                 ).lower()
+
+
+def is_fernet_key_set():
+    """
+    Check if Fernet key is set.
+
+    :returns: bool
+    """
+    with open(SETTINGS, Constants.READ_MODE) as f_read:
+        read = f_read.readline()
+    if read:
+        return True
+    return False
+
+
+def write_down_that_fernet_key_is_set():
+    """
+    Write down that Fernet key is set.
+
+    :returns: None
+    """
+    with open(SETTINGS, Constants.WRITE_MODE) as f_write:
+        f_write.write("Key set: True")
+
+
+def user_enters_fernet_key():
+    """
+    Insert Fernet key.
+
+    :returns: None
+    """
+    try:
+        print("Insert Ferent key to decrypt database")
+        global CRYPTOGRAPHER
+        key = input("Enter your key: ")
+        CRYPTOGRAPHER = Fernet(key.encode())
+    except ValueError:
+        print("Wrong format of a key.")
+        input("Press any key to exit.")
+        sys.exit()
+
+
+def check_if_master_password_is_correct():
+    """
+    Check if master password is correct.
+
+    :returns: str
+    """
+
+    nr_of_attempts: int = 0
+    limit_of_attempts: int = 3
+
+    while nr_of_attempts < limit_of_attempts:
+        master_password_user = take_master_password()
+        if master_password_user == decrypt_master_password_from_database():
+            return master_password_user
+        nr_of_attempts += 1
+        print(f"Incorrect master password, "
+              f"you got {limit_of_attempts - nr_of_attempts}/3 attempts left")
+        out_of_password_attempts(nr_of_attempts=nr_of_attempts, limit_of_attempts=limit_of_attempts)
+
+
+def password_operations_loop(master_password_user: str):
+    """
+    Loop which allows you to operate with passwords
+
+    :param master_password_user: Master password entered by user
+
+    :returns: None
+    """
+
+    while True:
+        operations_separator()
+        home = home_screen()
+        match home:
+            case Constants.READ_MODE:
+                operate_passwords(mode=Constants.READ_MODE)
+            case Constants.WRITE_MODE:
+                operate_passwords(mode=Constants.WRITE_MODE)
+            case Constants.DELETE_MODE:
+                operate_passwords(mode=Constants.DELETE_MODE, master_password_user=master_password_user)
+            case Constants.SHOW_ENCRYPTION:
+                show_encryption()
+            case Constants.GENERATE_PASSWORDS:
+                nr_of_passwords = int(input("Enter a number of passwords to generate: "))
+                len_of_passwords = int(input("Enter a length of passwords to generate: "))
+                password_generator(nr_of_passwords, len_of_passwords)
+            case Constants.QUIT:
                 print("***Quitting***")
                 sys.exit()
 
 
-if __name__ == '__main__':
-    pm = PasswordManager()
-    pm.main()
+def operations_separator():
+    """
+    Separator of operations
 
-# p*i*c*a
+    :returns: None
+    """
+    print("-" * 60)
+
+
+def password_generator(nr_of_passwords, len_of_passwords):
+    """Generate passwords out of all characters of basic ascii table"""
+    for _ in range(nr_of_passwords):
+        print("".join([chr(random.randint(33, 127)) for _ in range(len_of_passwords)]))
+
+
+def main():
+    """
+    Main function which loops and checks user input
+
+    :returns: None
+    """
+    master_password_is_set: bool = does_master_password_exist()
+    master_password_is_entered: bool = False
+    ferent_key_is_set: bool = is_fernet_key_set()
+    fernet_key_is_entered: bool = False
+    master_password_user: str = ""
+
+    if not ferent_key_is_set:
+        generate_fernet_key()
+        write_down_that_fernet_key_is_set()
+
+    if not fernet_key_is_entered:
+        user_enters_fernet_key()
+        fernet_key_is_entered += True
+
+    if not master_password_is_set:
+        master_password_user += set_master_password()
+        master_password_is_set += True
+        master_password_is_entered += True
+
+    if not master_password_is_entered:
+        master_password_user = check_if_master_password_is_correct()
+
+    password_operations_loop(master_password_user=master_password_user)
