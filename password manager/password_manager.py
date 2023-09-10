@@ -4,15 +4,47 @@ import hashlib
 import cryptography
 from cryptography.fernet import Fernet
 
+LIMIT_OF_ATTEMPTS = 3
+
 DATABASE = "encrypted.txt"
 SETTINGS = "settings.txt"
 CRYPTOGRAPHER: Fernet | None = None
+
+READ_PASSWORDS_MSG = "***Read passwords***"
+WRITE_PASSWORDS_MSG = "***Write passwords***"
+DELETE_PASSWORDS_MSG = "***Delete passwords***"
+DISPLAY_ENCRYPTION_MSG = "***Displaying encryption***"
+QUITTING_MSG = "***Quitting***"
+
+OPERATIONS_SCREEN = "[Passwords] " \
+                    "Read (r), " \
+                    "Write (w), " \
+                    "Delete (d), " \
+                    "Encryption (e), " \
+                    "Generate (g), " \
+                    "Quit (q): "
+
+SAVE_FERNET_KEY_MSG = "This is your Fernet Key, save it somewhere safe."
+ENTER_MASTER_PASSWORD_MSG = "Enter your master password: "
+PRESS_ANY_KEY_MSG = "Press Enter to exit..."
+WRONG_FERNET_KEY_MSG = "You entered wrong key, exiting application."
+INCORRECT_MASTER_PASSWORD_LIMIT_MSG = "You entered incorrect password 3x"
+DATA_ADDED_TO_DATABASE_MSG = "New data successfully added to the database\n"
+SPECIFY_WHAT_TO_DELETE_MSG = "Write a name of website/program and delete whole row with it: "
+DATA_DELETED_FROM_DATABASE_MSG = "Data successfully deleted\n"
+INSERT_FERNET_KEY_MSG = "Insert key to decrypt database"
+ENTER_FERNET_KEY_MSG = "Enter your key: "
+WRONG_FORMAT_OF_FERNET_KEY_MSG = "You entered wrong format of a key."
+INCORRECT_MASTER_PASSWORD_MSG = "Incorrect master password, you got"  # Only fraction of the message
+ATTEMPTS_LEFT_MSG = "attempts left."  # Only fraction of the message
+
+FERNET_KEY_SET = "Key set: True"
 
 
 class Constants:
     """
     This class contains constants used in the program. These constants could not be otherwise used
-        in "match cases" syntax.
+        in "match cases" syntax if they were global and not part of the object like here.
     """
 
     WRITE_MODE = "w"
@@ -21,15 +53,18 @@ class Constants:
     SHOW_ENCRYPTION = "e"
     GENERATE_PASSWORDS = "g"
     QUIT = "q"
+    NUMBER_OF_PASSWORDS_TO_GENERATE_MSG = "Enter a number of passwords to generate: "
+    LENGTH_OF_PASSWORDS_TO_GENERATE_MSG = "Enter a length of passwords to generate: "
+    WRONG_FORMAT_DIGIT_EXPECTED_MSG = "Wrong format, digit expected."
 
 
 def convert_to_hash(raw_text: str):
     """
-    This function serves as encryption of inputted text.
+    This function serves as encryption of inputted text with deterministic results.
 
     param: raw_text: String to be encrypted.
 
-    :returns: string
+    :returns: str
     """
     # Create a hash object (e.g., SHA-256)
     hash_obj_ = hashlib.sha256()
@@ -50,7 +85,7 @@ def generate_fernet_key():
     :returns: None
     """
 
-    print("This is your Fernet Key, save it somewhere safe.")
+    print(SAVE_FERNET_KEY_MSG)
     key = str(Fernet.generate_key())
     print(key[2:-1], end="\n\n")
     operations_separator()
@@ -59,6 +94,7 @@ def generate_fernet_key():
 def encrypt(raw_text: str):
     """
     This function serves as encryption of inputted text.
+    Decryption is possible only with the same key.
 
     :param raw_text: String to be encrypted by Fernet.
 
@@ -76,14 +112,25 @@ def take_master_password():
     :returns: str
     """
 
-    result = input("Enter your master password: ").strip()
+    result = input(ENTER_MASTER_PASSWORD_MSG).strip()
     hash_result = convert_to_hash(result)
     return hash_result
 
 
+def exit_application(custom_message: str = None):
+    """
+    Exit application.
+
+    :returns: None
+    """
+    print(custom_message)
+    input(PRESS_ANY_KEY_MSG)
+    sys.exit()
+
+
 def decrypt_master_password_from_database():
     """
-    This function decrypts master password and returns hash.
+    This function decrypts with Fernet master password and returns hash.
 
     :returns: str
     """
@@ -92,14 +139,12 @@ def decrypt_master_password_from_database():
             read = f_read.readline().encode()
         return CRYPTOGRAPHER.decrypt(bytes(read)).decode()
     except cryptography.fernet.InvalidToken:
-        print("You entered wrong key, exiting application.")
-        input("Press any key to exit...")
-        sys.exit()
+        exit_application(WRONG_FERNET_KEY_MSG)
 
 
 def decrypt_whole_text():
     """
-    Decrypt whole database text.
+    Decrypt whole database text with Fernet and return readable text.
 
     :returns: str
     """
@@ -113,17 +158,14 @@ def decrypt_whole_text():
     return "\n".join(decrypted)
 
 
-def out_of_password_attempts(nr_of_attempts, limit_of_attempts):
+def out_of_password_attempts(nr_of_attempts):
     """
     Give a user 3 attempts to get inside.
 
     :returns: None
     """
-    if nr_of_attempts == limit_of_attempts:
-        print("You entered incorrect password 3x\n"
-              "***Quitting***")
-        input("Press any key to exit...")
-        sys.exit()
+    if nr_of_attempts == LIMIT_OF_ATTEMPTS:
+        exit_application(INCORRECT_MASTER_PASSWORD_LIMIT_MSG)
 
 
 def does_master_password_exist():
@@ -141,7 +183,7 @@ def does_master_password_exist():
 
 def set_master_password():
     """
-    Set new master password if opening the file for the first time.
+    Set new master password.
 
     :returns: str
     """
@@ -178,22 +220,21 @@ def operate_passwords(mode: str, master_password_user: str | None = None):
     """
 
     if mode == Constants.READ_MODE:
-        print("***Read passwords***")
+        print(READ_PASSWORDS_MSG)
         print(decrypt_whole_text())
         return
     elif mode == Constants.WRITE_MODE:
-        print("***Write passwords***")
+        print(WRITE_PASSWORDS_MSG)
         new_data = text_formatting()
         with open(DATABASE, "a") as f_append:
             f_append.write(f"\n{encrypt(new_data)}")
-        print("New data successfully added to the database\n")
+        print(DATA_ADDED_TO_DATABASE_MSG)
         return
     elif mode == Constants.DELETE_MODE:
-        print("***Delete passwords***")
+        print(DELETE_PASSWORDS_MSG)
         list_of_entries = decrypt_whole_text().split("\n")
         print(decrypt_whole_text())
-        entry_tobe_deleted = input(
-            "Write a name of website/program and delete whole row with it: ")
+        entry_tobe_deleted = input(SPECIFY_WHAT_TO_DELETE_MSG)
 
         with open(DATABASE, Constants.WRITE_MODE) as f_delete:
             for i, item in enumerate(list_of_entries):
@@ -203,7 +244,7 @@ def operate_passwords(mode: str, master_password_user: str | None = None):
                     break
             passwords = "\n".join(list_of_entries[1:])
             f_delete.write(f"{encrypt(master_password_user)}'\n'{encrypt(passwords)}")
-            print("Data successfully deleted\n")
+            print(DATA_DELETED_FROM_DATABASE_MSG)
         return
 
 
@@ -213,21 +254,14 @@ def show_encryption():
 
     :returns: None
     """
-    print("***Displaying encryption***")
+    print(DISPLAY_ENCRYPTION_MSG)
     with open(DATABASE, Constants.READ_MODE) as f_read:
         print(f_read.read())
 
 
 def home_screen():
     """Display options that allow you to operate with program"""
-    return input("[Passwords] "
-                 "Read (r), "
-                 "Write (w), "
-                 "Delete (d), "
-                 "Encryption (e), "
-                 "Generate (g), "
-                 "Quit (q): "
-                 ).lower()
+    return input(OPERATIONS_SCREEN).lower()
 
 
 def is_fernet_key_set():
@@ -245,29 +279,27 @@ def is_fernet_key_set():
 
 def write_down_that_fernet_key_is_set():
     """
-    Write down that Fernet key is set.
+    Write down to settings file that Fernet key is set.
 
     :returns: None
     """
     with open(SETTINGS, Constants.WRITE_MODE) as f_write:
-        f_write.write("Key set: True")
+        f_write.write(FERNET_KEY_SET)
 
 
-def user_enters_fernet_key():
+def let_user_enter_fernet_key():
     """
     Insert Fernet key.
 
     :returns: None
     """
     try:
-        print("Insert Ferent key to decrypt database")
+        print(INSERT_FERNET_KEY_MSG)
         global CRYPTOGRAPHER
-        key = input("Enter your key: ")
+        key = input(ENTER_FERNET_KEY_MSG)
         CRYPTOGRAPHER = Fernet(key.encode())
     except ValueError:
-        print("Wrong format of a key.")
-        input("Press any key to exit.")
-        sys.exit()
+        exit_application(WRONG_FORMAT_OF_FERNET_KEY_MSG)
 
 
 def check_if_master_password_is_correct():
@@ -278,21 +310,22 @@ def check_if_master_password_is_correct():
     """
 
     nr_of_attempts: int = 0
-    limit_of_attempts: int = 3
 
-    while nr_of_attempts < limit_of_attempts:
+    while nr_of_attempts < LIMIT_OF_ATTEMPTS:
         master_password_user = take_master_password()
         if master_password_user == decrypt_master_password_from_database():
             return master_password_user
-        nr_of_attempts += 1
-        print(f"Incorrect master password, "
-              f"you got {limit_of_attempts - nr_of_attempts}/3 attempts left")
-        out_of_password_attempts(nr_of_attempts=nr_of_attempts, limit_of_attempts=limit_of_attempts)
+        else:
+            nr_of_attempts += 1
+            print(INCORRECT_MASTER_PASSWORD_MSG + " "
+                  + f"{LIMIT_OF_ATTEMPTS - nr_of_attempts}/{LIMIT_OF_ATTEMPTS}" + " "
+                  + ATTEMPTS_LEFT_MSG)
+            out_of_password_attempts(nr_of_attempts=nr_of_attempts)
 
 
 def password_operations_loop(master_password_user: str):
     """
-    Loop which allows you to operate with passwords
+    Loop which allows you to operate with passwords.
 
     :param master_password_user: Master password entered by user
 
@@ -308,15 +341,19 @@ def password_operations_loop(master_password_user: str):
             case Constants.WRITE_MODE:
                 operate_passwords(mode=Constants.WRITE_MODE)
             case Constants.DELETE_MODE:
-                operate_passwords(mode=Constants.DELETE_MODE, master_password_user=master_password_user)
+                operate_passwords(mode=Constants.DELETE_MODE,
+                                  master_password_user=master_password_user)
             case Constants.SHOW_ENCRYPTION:
                 show_encryption()
             case Constants.GENERATE_PASSWORDS:
-                nr_of_passwords = int(input("Enter a number of passwords to generate: "))
-                len_of_passwords = int(input("Enter a length of passwords to generate: "))
-                password_generator(nr_of_passwords, len_of_passwords)
+                try:
+                    nr_of_passwords = int(input(Constants.NUMBER_OF_PASSWORDS_TO_GENERATE_MSG))
+                    len_of_passwords = int(input(Constants.LENGTH_OF_PASSWORDS_TO_GENERATE_MSG))
+                    password_generator(nr_of_passwords, len_of_passwords)
+                except ValueError:
+                    print(Constants.WRONG_FORMAT_DIGIT_EXPECTED_MSG)
             case Constants.QUIT:
-                print("***Quitting***")
+                print(QUITTING_MSG)
                 sys.exit()
 
 
@@ -352,7 +389,7 @@ def main():
         write_down_that_fernet_key_is_set()
 
     if not fernet_key_is_entered:
-        user_enters_fernet_key()
+        let_user_enter_fernet_key()
         fernet_key_is_entered += True
 
     if not master_password_is_set:
